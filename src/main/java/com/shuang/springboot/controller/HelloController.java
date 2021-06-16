@@ -1,6 +1,8 @@
 package com.shuang.springboot.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -19,5 +21,9 @@ public class HelloController {
         return "Hello2";
     }
 
+    @PutMapping("/hello3")
+    public String sayHello3() {
+        return "Hello3";
+    }
 
 }
